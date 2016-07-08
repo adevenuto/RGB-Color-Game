@@ -1,0 +1,193 @@
+body, html, ul {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background: rgb(212,212,212);
+}
+p {
+  margin: 0;
+}
+#r {
+  color: #f00;
+}
+#g {
+  color: #0f0;
+}
+#b {
+  color: #00f;
+}
+#colorSquareContainer {
+  width: 50%;
+  height: 100%;
+  margin: 35px auto;
+}
+.colorSquare {
+  width: 30%;
+  padding-bottom: 30%;
+  background: #000;
+  float: left;
+  margin: 1.66%;
+  transition: all 200ms ease-in-out;
+  box-shadow: 1px 1px 40px -6px #000;
+  border-radius: 10px;
+}
+.colorSquareHard {
+  width: 21%;
+  padding-bottom: 21%;
+  background: #000;
+  float: left;
+  margin: 2%;
+  transition: all 200ms ease-in-out;
+  box-shadow: 1px 1px 40px -6px #000;
+  border-radius: 10px;
+}
+#header {
+  color: #000;
+  height: 165px;
+  text-align: center;
+}
+.headerBackground {
+  background: rgb(227, 229, 209);
+}
+nav {
+  width: 100%;
+  height: 35px;
+  background: rgb(224, 78, 46);
+  box-shadow: 0px 13px 19px -9px #000;
+  border-top: 1px solid #000;
+}
+#navContainer {
+  width: 50%;
+  height: inherit;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 33px;
+  font-size: 15px;
+  color: #000
+  ;
+}
+.navButtons {
+  width: 33.3%;
+  float: left;
+  height: inherit;
+}
+.navRightBtn {
+  float: left;
+  width: 50%;
+  height: inherit;
+}
+.navLeft {
+  background: rgba(227, 229, 209, 0.35);
+  transition: background 150ms ease-in-out;
+}
+.navLeft:hover {
+  background: #e3e5d1;
+}
+.navMiddle {
+  transition: font-size 150ms ease-in-out;
+  font-size: 24px;
+  font-weight: 400;
+  text-shadow: 0px 0px 4px #fff;
+}
+.navRightL {
+  transition: font-size 150ms ease-in-out;
+}
+.active {
+  background: rgb(227, 229, 209);
+  transition: all 200ms ease-in-out;
+}
+.hidden {
+  opacity: 0;
+  font-size: 0;
+}
+#boundryControlsContainer {
+  height: 30px;
+  width: 50%;
+  margin: 0 auto;
+}
+.boundryControls {
+  float: left;
+  height: inherit;
+  margin: 0 1.66%;
+}
+.bCL {
+  width: 20%;
+  position: relative;
+  bottom: 14px;
+}
+.bCM {
+  width: 50%;
+}
+.bCR {
+  width: 20%;
+  position: relative;
+  bottom: 14px;
+}
+.bCT {
+  height: 33.33%;
+  width: 100%;
+  padding: 3px;
+}
+.bCC {
+  height: 33.33%;
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 8px;
+}
+.bCB {
+  height: 33.33%;
+  width: 100%;
+  padding: 3px;
+}
+#currentRgbDisplay {
+  box-shadow: 0px 7px 15px -3px #000000;
+  font-size: 1em;
+  padding: 3px;
+}
+
+.boundryText {
+    position: relative;
+    top: 11px;
+    font-size: 9px;
+}
+.fa-angle-up {
+  font-size: 2.5em !important;
+}
+.fa-angle-down {
+  font-size: 2.5em !important;
+}
+@media (max-width: 767px) {
+  #navContainer {
+    width: 90%;
+    font-size: 15px;
+  }
+  #colorSquareContainer {
+    width: 93%;
+  }
+  .navMiddle {
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  #boundryControlsContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  #navContainer {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>Color Guessing game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://use.fontawesome.com/9a7654f5fb.js"></script>
+  <link rel="stylesheet" type="text/css" href="colorGame.css">
+</head>
+<body>
+  <div id="header" class="headerBackground">
+    <h1>
+      <span id="r">R</span><span id="g">G</span><span id="b">B</span>
+      Color Game
+    </h1>
+    <h2>Guess the right color</h2>
+    <div id="boundryControlsContainer">
+
+      <div class="boundryControls bCL">
+        <div class="bCT lowerBound">0</div>
+        <div class="bCC" onmouseup="clearLowerBound()" onmousedown="lowerBoundControl('up')"><span class="fa fa-angle-up"></span></div>
+        <p class="boundryText">Lower Bound</p>
+        <div class="bCB" onmouseup="clearLowerBound()" onmousedown="lowerBoundControl('down')"><span class="fa fa-angle-down"></span></div>
+
+      </div>
+      <div class="boundryControls bCM">
+        <h3 id="currentRgbDisplay">
+      </h3></div>
+
+      <div class="boundryControls bCR">
+        <div class="bCT upperBound">255</div>
+        <div class="bCC" onmouseup="clearUpperBound()" onmousedown="upperBoundControl('up')"><span class="fa fa-angle-up"></span></div>
+        <p class="boundryText">Upper Bound</p>
+        <div class="bCB" onmouseup="clearUpperBound()" onmousedown="upperBoundControl('down')"><span class="fa fa-angle-down"></span></div>
+      </div>
+
+    </div>
+  </div>
+  <nav>
+    <div id="navContainer">
+      <div class="navLeft navButtons" id="newGame" onclick="randomize()">Random Colors</div>
+      <div class="navMiddle navButtons hidden">Try Again</div>
+      <div class="navRight navButtons">
+        <div class="navRightL navRightBtn active" onclick="difficulty('easy')">Easy</div>
+        <div class="navRightR navRightBtn" onclick="difficulty('hard')">Hard</div>
+      </div>
+
+    </div>
+  </nav>
+
+  <div id="colorSquareContainer">
+    <div class="colorSquare"></div>
+    <div class="colorSquare"></div>
+    <div class="colorSquare"></div>
+    <div class="colorSquare"></div>
+    <div class="colorSquare"></div>
+    <div class="colorSquare"></div>
+  </div>
+  <script type="text/javascript" src="colorGame.js"></script>
+</body>
+</html>
